@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+/* I have taken this font from google fonts and that's why I have added it here*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html{
+    font-size: 10px;
+} /*this is used to change the rem size from 16px to 10px , this makes it easy to make the website responsive using media queries*/
+
+/* This stylizes the page defaults */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+    background-image: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&w=1815&h=1200&fit=crop&crop=faces);
+}
+} 
+
+.container{
+    width: 90%;
+    margin: 5rem auto;
+   
+}  /* To give width to the container, you can check the width by adding background color*/
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    
+}  /*aligning the heading to the center*/
+
+.card{
+    width: 25%;
+    background: #fff;
+    border: 0.1rem solid #ccc;
+    margin-bottom: 5rem;
+    transition: 0.3s;
+    box-shadow: 0 0 0.5rem 0.2rem grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  /* this card is the main body of the card element , it basically holds the image , headers , paragraphs and button*/
+
+.fit{
+    height: 100%;
+    width: 100%;
+    display: block;
+}  /*inorder to fit the image in the div container*/
+
+.para{
+    padding: 3rem 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}  /*making adjustments to the para*/
+
+.btn{
+    padding: 1rem 0.4rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid grey;
+    width: 15rem;
+    height: 4rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e09f3e;
+
+} /*here display flex is used to align the text of the button to the center*/
+
+.bttn{
+    text-decoration: none;
+    color: black;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2.5rem;
+} /* text-decoration is used to remove the line of the link*/
+
+.btn:hover{
+    background-color: cyan;
+} /*this is to apply the hover effect to the button background*/
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 4rem -1rem grey;
+} /*this is to add transition to the card element*/
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} /*display flex to align the card elements */
+
+.upp{
+    position: relative;
+    bottom: 1rem;
+} /*to elevate the middle card element*/
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+} /*adjusting the price */
+
+@media screen and (max-width:1000px){
+    .card{
+        width: 40%;
+    }
+} /*to make the website responsive */
+@media screen and (max-width:800px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card{
+        width: 50%;
+    }
+} /*here the card elements start to display in column , when you shrink it to 800px*/
+
+
+
+
+
